@@ -5,8 +5,8 @@ Portal, Vendor Portal, and a back-office Admin Portal that talks to all three ov
 Modeled on a GNCTD-style vendor/supplier onboarding + contract + invoice + payment SRS.
 
 ## Stack & ports
-- Backend: FastAPI + SQLAlchemy 2.0 + PostgreSQL. Runs on **:8002**.
-- Frontend: React (Vite) + Tailwind CSS (strictly Tailwind, no inline CSS). Runs on **:5175**.
+- Backend: FastAPI + SQLAlchemy 2.0 + PostgreSQL. Runs on **:9003**.
+- Frontend: React (Vite) + Tailwind CSS (strictly Tailwind, no inline CSS). Runs on **:7003**.
 - DB: `postgresql+psycopg2://vendor_db:vendor_db@localhost:5432/vendor_db` (see `backend/.env`).
 - No migrations tool -- `Base.metadata.create_all()` on startup creates missing tables only; new
   columns on existing tables were added additively via `ALTER TABLE ... ADD COLUMN IF NOT EXISTS`
